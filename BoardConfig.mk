@@ -48,7 +48,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/recovery/kernel
 
 # Encryption
-TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_CRYPTO_FBE := false
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 50331648
@@ -68,7 +68,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO := false
 TW_MAX_BRIGHTNESS := 255
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_SCREEN_BLANK_ON_BOOT := true
